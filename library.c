@@ -68,3 +68,16 @@ void menu_manager()
     printf("\t\t\t *=============================================*\n");
 }
 
+//--------------------------登录操作-----------------------------
+//用户登录
+int login(pUser* user)
+{
+    char account[ACCOUNT]="";
+    char password[PASSWORD]="";
+    FILE* fp;
+    pUser users = NULL;
+    //输入账号密码
+    input(account,password);
+    //打开文件并从文件读入所有用户信息
+    errno_t message = fopen_s(&fp,"users")
+}
